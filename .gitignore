@@ -190,3 +190,11 @@ node_modules/
 dist/
 *.mp4
 *.mkv
+
+media/avatars/*
+!media/avatars/.gitkeep
+
+media/videos/originals/*
+media/videos/processed/*
+media/videos/originals/.gitkeep
+media/videos/processed/.gitkeep
