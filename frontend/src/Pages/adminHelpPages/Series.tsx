@@ -18,7 +18,6 @@ export default function SeriesPage() {
 	const [editEpisode, setEditEpisode] = useState<any>(null);
 
     const { id } = useParams();
-	// Заглушка: список эпизодов
 	const [episodes, setEpisodes] = useState<Episode[]>([]);
 	const [convertEpisode, setSelectConvertedEpisode] = useState<Episode|null>(null);
 

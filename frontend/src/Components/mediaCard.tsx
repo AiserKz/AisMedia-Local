@@ -9,7 +9,7 @@ export default function MediaCard({item}: any) {
                 <img
                     src={"http://"  + window.location.hostname + ":8000" + item.poster}
                     className="w-full h-full object-cover transition-all !duration-300 ease-in-out group-hover:scale-110"
-                    alt="Черный Адам"
+                    alt={item.title}
                 />
                 {/* Затемнение */}
                 <Link to={`/watch/${item.id}`} className="absolute inset-0 bg-black opacity-0 transition duration-300 group-hover:opacity-80 flex items-center justify-center">
