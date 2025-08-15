@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+@plugin "daisyui" {
+  themes: dark, light --preferslight, cupcake;
+}
+
+#nprogress .bar {
+  background: #a855f7 !important;
+  box-shadow: 0 5px 15px  #a855f7, 0 5px 25px #a855f7;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #a855f7 !important;
+  border-left-color: #a855f7 !important;
+  
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+body, button, select, textarea, html {
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out !important;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInAnimation 0.5s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
